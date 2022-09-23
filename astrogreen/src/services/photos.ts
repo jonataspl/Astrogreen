@@ -25,9 +25,16 @@ export const insert = async (file: File) => {
   if (
     ["image.jpeg", "image/jpg", "image/png", "image/GIF"].includes(file.type)
   ) {
-    let newFile = ref(storage, `UploadImages`);
+    let randomName = createId();
+    let newFile = ref(storage, `UploadImages/${randomName}`);
 
-    let upload = await uploadBytes();
+    let upload = await uploadBytes(newFile, file);
+    let photoUrl = await getDownloadURL(upload.ref);
+
+    return {
+      name: upload.ref.name,
+      url: photoUrl,
+    } as Photo;
   } else {
     return new Error("Tipo de arquivo não permitido.");
   }
