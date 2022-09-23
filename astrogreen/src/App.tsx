@@ -21,7 +21,7 @@ const App = () => {
       <C.Area>
         <C.Header>Galeria de fots</C.Header>
 
-        {/* Upload 🧙‍♂️ Images */}
+        {/* Upload Images */}
         {loading && (
           <C.ScreenWarning>
             <div className="emoji">🧙‍♂️</div>
