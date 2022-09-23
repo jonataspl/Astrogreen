@@ -18,3 +18,11 @@ export const Header = styled.h1`
   text-align: center;
   margin-bottom: 30px;
 `;
+
+export const ScreenWarning = styled.div`
+  text-aling: center;
+  .emoji {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+`;
