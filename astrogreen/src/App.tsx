@@ -6,7 +6,7 @@ const App = () => {
       <C.Area>
         <C.Header>Galeria de fots</C.Header>
 
-        {/* Upload Images */}
+        {/* Upload 🧙‍♂️ Images */}
         {/* Grid Images */}
       </C.Area>
     </C.Container>
