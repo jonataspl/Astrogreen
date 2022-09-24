@@ -22,6 +22,7 @@ const App = () => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
+
     const file = formData.get("image") as File;
     if (file && file.size > 0) {
       setUploading(true);

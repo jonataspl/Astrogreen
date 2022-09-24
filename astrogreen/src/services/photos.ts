@@ -23,7 +23,7 @@ export const getAll = async () => {
 
 export const insert = async (file: File) => {
   if (
-    ["image.jpeg", "image/jpg", "image/png", "image/GIF"].includes(file.type)
+    ["image/jpeg", "image/jpg", "image/png", "image/GIF"].includes(file.type)
   ) {
     let randomName = createId();
     let newFile = ref(storage, `UploadImages/${randomName}`);

@@ -9,7 +9,10 @@ export const PhotoItem = ({ url, name }: Props) => {
   return (
     <C.Container>
       <img src={url} alt={name} />
-      {name}
+      {/* {name} */}
+      <C.Remove>
+        <input type="submit" value="Remover" />
+      </C.Remove>
     </C.Container>
   );
 };
