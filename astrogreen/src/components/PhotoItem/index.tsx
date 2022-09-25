@@ -1,17 +1,22 @@
+import { Photo } from "../../types/Photo";
 import * as C from "./styles";
+import * as Photos from "../../services/photos";
 
 type Props = {
-  url: string;
-  name: string;
+  photo: Photo;
 };
 
-export const PhotoItem = ({ url, name }: Props) => {
+export function removeEl() {
+  Photos.removeImage;
+}
+
+export const PhotoItem = ({ photo }: Props) => {
   return (
     <C.Container>
-      <img src={url} alt={name} />
+      <img src={photo.url} alt={photo.name} />
       {/* {name} */}
-      <C.Remove>
-        <input type="submit" value="Remover" />
+      <C.Remove onClick={removeEl}>
+        <button id="botao">Remover</button>
       </C.Remove>
     </C.Container>
   );

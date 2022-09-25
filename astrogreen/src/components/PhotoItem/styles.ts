@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const Remove = styled.div`
-  input {
+  button {
     background-color: #e3403b;
     border: 0;
     color: #fff;

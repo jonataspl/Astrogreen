@@ -60,7 +60,7 @@ const App = () => {
         {!loading && photos.length > 0 && (
           <C.PhotoList>
             {photos.map((item, index) => (
-              <PhotoItem key={index} url={item.url} name={item.name} />
+              <PhotoItem key={index} photo={item} />
             ))}
           </C.PhotoList>
         )}
