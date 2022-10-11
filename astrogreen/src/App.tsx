@@ -42,7 +42,10 @@ const App = () => {
   return (
     <C.Container>
       <C.Area>
-        <C.Header>Galeria de fotos</C.Header>
+        <C.Header>
+          <h1 className="title">Astrogreen</h1>
+          <p className="yourphotos">Suas Fotos</p>
+        </C.Header>
 
         <C.UploadForm method="POST" onSubmit={handleFormSubmit}>
           <input type="file" name="image" />

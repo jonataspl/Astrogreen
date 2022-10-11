@@ -6,17 +6,28 @@ type Props = {
   photo: Photo;
 };
 
-export function removeEl() {
-  Photos.removeImage;
+export function botao(photo: Photo) {
+  return Photos.removeImage(photo);
 }
 
-export const PhotoItem = ({ photo }: Props) => {
+// export function removeEl() {
+//   return botao.addEventListener('click', function(){})
+// }
+
+export const PhotoItem = (props: Props) => {
   return (
     <C.Container>
-      <img src={photo.url} alt={photo.name} />
-      {/* {name} */}
-      <C.Remove onClick={removeEl}>
-        <button id="botao">Remover</button>
+      <img src={props.photo.url} alt={props.photo.name} />
+      {props.photo.name}
+      <C.Remove>
+        <button
+          id="botao"
+          onClick={() => {
+            botao(props.photo);
+          }}
+        >
+          Remover
+        </button>
       </C.Remove>
     </C.Container>
   );

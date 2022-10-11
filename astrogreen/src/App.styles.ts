@@ -4,6 +4,16 @@ export const Container = styled.div`
   background-color: #27282f;
   color: #fff;
   min-height: 100vh;
+  .title {
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 70px;
+  }
+  .yourphotos {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 35px;
+  }
 `;
 
 export const Area = styled.div`

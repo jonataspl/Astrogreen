@@ -25,6 +25,7 @@ export const Remove = styled.div`
     font-size: 16px;
     border-radius: 8px;
     display: inline-block;
+    cursor: pointer;
     &:hover {
       opacity: 0.8;
     }
