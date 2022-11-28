@@ -10,6 +10,9 @@ export function botao(photo: Photo) {
   return Photos.removeImage(photo);
 }
 
+const handleClick = () => {
+  alert("Teste");
+};
 // export function removeEl() {
 //   return botao.addEventListener('click', function(){})
 // }
@@ -24,6 +27,7 @@ export const PhotoItem = (props: Props) => {
           id="botao"
           onClick={() => {
             botao(props.photo);
+            // return handleClick;
           }}
         >
           Remover
